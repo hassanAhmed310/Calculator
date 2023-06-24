@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <body>
+		<div class="container">
+            <h1>Calculator</h1>
+            <div id="screen"></div>
+            <div class="buttons">
+              <ul>
+                <li><button onclick="reset()">C</button></li>
+                <li><button onclick="handleButtonClick(this)">(</button></li>
+                <li><button onclick="handleButtonClick(this)">)</button></li>
+                <li><button onclick="divide()">&divide;</button></li>
+              </ul>
+              <ul>
+                <li><button onclick="handleButtonClick(this)">1</button></li>
+                <li><button onclick="handleButtonClick(this)">2</button></li>
+                <li><button onclick="handleButtonClick(this)">3</button></li>
+                <li><button onclick="multiply()">&times;</button></li>
+              </ul>
+              <ul>
+                <li><button onclick="handleButtonClick(this)">4</button></li>
+                <li><button onclick="handleButtonClick(this)">5</button></li>
+                <li><button onclick="handleButtonClick(this)">6</button></li>
+                <li><button onclick="plus()">&plus;</button></li>
+              </ul>
+              <ul>
+                <li><button onclick="handleButtonClick(this)">7</button></li>
+                <li><button onclick="handleButtonClick(this)">8</button></li>
+                <li><button onclick="handleButtonClick(this)">9</button></li>
+                <li><button onclick="minus()">&minus;</button></li>
+              </ul>
+              <ul>
+                <li><button onclick="handleButtonClick(this)">.</button></li>
+                <li><button onclick="handleButtonClick(this)">0</button></li>
+                <li>
+                  <button class="image-button" onclick="removeLast()">
+                    <img src="assets/remove-icon.png" alt="Del">
+                  </button>
+                </li>
+                <li><button onclick="equal()">&equals;</button></li>
+              </ul>
+            </div>
+        </div>
+  </body>
+  <script src="main.js"></script>
+</html>
